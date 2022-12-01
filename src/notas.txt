@@ -1,0 +1,33 @@
+import { useEffect, useState } from 'react'
+import './App.css'
+
+function App() {
+
+  
+  const [count, setCount] = useState(0)
+  // const increment = () => setCount(count + 1)
+  // const decrement = () => setCount(count - 1)
+  
+  const [ input, setInput ] = useState("password")
+  
+  console.log("FUERA del Call Center ;)")
+
+  useEffect(() => {
+    console.log("DENTRO del Call Center ;(")
+    const colors = ['#B93DAF', '#00C9A7', '#51308E', '#D63423', '#3596B5', '#AF5C00', '#FF9671']
+    const randomColor = Math.floor(Math.random() * colors.length)
+    document.body.style = `background: ${colors[randomColor]}`
+  }, [])
+  
+
+  return (
+    <div className="App">
+      <input type={input ? "text" : "password"} />
+      <button onClick={() => setInput(!input)}>isVsible</button>
+      <h1 style={{color: "black"}}>{count}</h1>
+      <button onClick={() => setCount(count + 1)}>increment</button>
+      <button onClick={() => setCount(count - 1)}>decrement</button>
+       
+    </div>
+  )
+}

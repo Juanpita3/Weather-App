@@ -1,0 +1,31 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.App ul{
+  list-style: none;
+  padding-right:15%;
+
+}
+
+.App{
+  background-color: #c6c6c6;
+  width: 25%;
+  color: #000;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-top: 5rem;
+  box-shadow: inset -5px -5px 10px; 
+}
+
+.App h1{
+  padding-right: 2%;
+}
+
+body{
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/552/399/815/sky-clouds-hd-altostratos-cloud-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
